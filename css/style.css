@@ -5,8 +5,13 @@ body {
 	margin: 15px;
 	padding: 15px;
 	text-decoration: none;
+	
+}
+
+.about_me{
 	background-image: url("../images/texture.jpg");
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -75,6 +80,7 @@ img:hover{
 .gallery .urbangallery img:hover{
     filter: grayscale();
     border: dashed;
+
 }
 
 footer{
@@ -88,4 +94,45 @@ footer{
 .gallery .urbangallery  img:nth-child(3n):hover{
 	filter: sepia();
 	border: dashed;
+}
+
+img#sunset{
+    animation: sunset 5s 1;
+}
+
+img{
+	box-shadow: 8px 8px 8px #777777;
+
+}
+
+.skip{  position: absolute;
+	left: -200px;
+}
+
+.skip:focus{
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+
+
+
+
+
+
+@keyframes sunset {
+    from {width: 10px; opacity: 0;}
+    to {width: 325px; opacity: 1; }
+}
+
+
+
+
+@media screen and (prefers-reduced-motion: reduce){
+
+    img#sunset{
+        animation: inherit;
+    }
+
 }
