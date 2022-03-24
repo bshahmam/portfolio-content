@@ -65,9 +65,8 @@ img:hover{
 
 .gallery{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
 	row-gap: 20px;
-	column-gap: 10px;
 }
 
 .urbangallery{
@@ -114,10 +113,6 @@ img{
     left: 0;
     top: 20px;
 }
-
-
-
-
 
 
 
